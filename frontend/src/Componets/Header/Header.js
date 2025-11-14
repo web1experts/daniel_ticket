@@ -13,7 +13,7 @@ function HeaderSite() {
                     <Col sm={12}>
                         <Navbar expand="lg">
                             <Navbar.Brand href="/">
-                                <img src="./images/logo.png" alt="..." />
+                                <img className="logo" src="./images/logo.png" alt="..." />
                             </Navbar.Brand>
                             <Form.Group className="mb-0 form-group">
                                 <Form.Control type="text" placeholder="Search..." />

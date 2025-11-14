@@ -9,6 +9,10 @@ import { HiOutlineUsers } from "react-icons/hi2";
 import { BsMap } from 'react-icons/bs';
 import { MdOutlineUploadFile } from 'react-icons/md';
 import { FiHome, FiFilm, FiFolderPlus, FiFolder } from 'react-icons/fi';
+import { MdOutlineDataUsage } from "react-icons/md";
+import { AiOutlineProject } from "react-icons/ai";
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './sidebarStyle.css';
 import '../../App.css';
@@ -70,7 +74,7 @@ function SidebarPanel() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav>
                         <Dropdown className="profile--dropdown">
-                            <Dropdown.Toggle id="dropdown-basic">{username}</Dropdown.Toggle>
+                            <Dropdown.Toggle id="dropdown-basic">WORKSPACE</Dropdown.Toggle>
                             <Dropdown.Menu>
                                 <Dropdown.Item href="#"><span><FaCog /></span> Settings</Dropdown.Item>
                                 <Dropdown.Item href="#"><span><FaSignOutAlt /></span> Logout</Dropdown.Item>
@@ -78,7 +82,7 @@ function SidebarPanel() {
                         </Dropdown>
                         <Nav.Link href="/dashboard" className={location.pathname === "/dashboard" ? 'active' : ''}><span><FiHome /></span> Dashboard</Nav.Link>
                         <NavDropdown
-                            title={<p><span><FiFilm /></span> Video Creation</p>}
+                            title={<p><span><AiOutlineProject /> </span> Projects</p>}
                             id="dropdown-video-creation"
                             show={openDropdowns['video-creation']}
                             onToggle={() => toggleDropdown('video-creation')}
@@ -94,31 +98,31 @@ function SidebarPanel() {
                         </NavDropdown>
 
                         <NavDropdown
-                            title={<p><span><img src="../images/template-icon.png" alt="Templates" /></span> Content Tools</p>}
+                            title={<p><span><img src="../images/template-icon.png" alt="Templates" /></span> Personalisation</p>}
                             id="dropdown-content-tools"
                             show={openDropdowns['content-tools']}
                             onToggle={() => toggleDropdown('content-tools')}
                         >
-                            <NavDropdown.Item href={links.Upload_footage_list} target="_blank" className={location.pathname === "/upload-footage" ? 'submenu-active' : ''}><span><MdOutlineUploadFile /></span> Upload Footage</NavDropdown.Item>
-                            <NavDropdown.Item href={links.File_generator} target="_blank" className={location.pathname === "/file-name-generator" ? 'submenu-active' : ''}><span><FaListUl /></span> File Name Generator</NavDropdown.Item>
+                            <NavDropdown.Item href={links.Upload_footage_list} target="_blank" className={location.pathname === "/upload-footage" ? 'submenu-active' : ''}><span><MdOutlineUploadFile /></span>  Image</NavDropdown.Item>
+                            <NavDropdown.Item href={links.File_generator} target="_blank" className={location.pathname === "/file-name-generator" ? 'submenu-active' : ''}><span><FaListUl /></span> Text</NavDropdown.Item>
                             
-                            <NavDropdown.Item href={links.Scripdb_link} target="_blank" className={location.pathname === "/script-library" ? 'submenu-active' : ''}> <span><RiFilePaper2Line /></span> Script DB</NavDropdown.Item>
-                            <NavDropdown.Item href={links.Translation_link} target="_blank" className={location.pathname === "/translators" ? 'submenu-active' : ''}> <span><RiTranslate /></span> Translate App</NavDropdown.Item>
+                            <NavDropdown.Item href={links.Scripdb_link} target="_blank" className={location.pathname === "/script-library" ? 'submenu-active' : ''}> <span><RiFilePaper2Line /></span> SPeech</NavDropdown.Item>
+                            <NavDropdown.Item href={links.Translation_link} target="_blank" className={location.pathname === "/translators" ? 'submenu-active' : ''}> <span><RiTranslate /></span> Audio</NavDropdown.Item>
                             
-                            <NavDropdown.Item href="/templates" className={location.pathname === "/templates" ? 'submenu-active' : ''}> <span><CiGrid31 /></span> Templates</NavDropdown.Item>
+                            <NavDropdown.Item href="/templates" className={location.pathname === "/templates" ? 'submenu-active' : ''}> <span><CiGrid31 /></span> Transcribe</NavDropdown.Item>
                         </NavDropdown>
 
                         
                         <Nav.Link as={Link} to="/users" className={location.pathname === "/users" ? 'active' : ''}>
-                            <span><HiOutlineUsers /></span> Users
+                            <span><HiOutlineUsers /></span> Profile
                         </Nav.Link>
 
                         
-                        <Nav.Link href="#link"><span><IoBarChartOutline /></span> Reports</Nav.Link>
+                        <Nav.Link href="#link"><span><IoBarChartOutline /></span> Memory</Nav.Link>
                         
-                        <Nav.Link href="/regional-highlights" className={location.pathname === "/regional-highlights" ? 'active' : ''}><span><RiGlobeLine /></span> Regional Highlights</Nav.Link>
+                        <Nav.Link href="/regional-highlights" className={location.pathname === "/regional-highlights" ? 'active' : ''}><span><MdOutlineDataUsage  /></span>  Usage</Nav.Link>
                         <NavDropdown
-                            title={<p><span><BsMap /></span> Playbooks / How Tos</p>}
+                            title={<p><span><BsMap /></span> Growth</p>}
                             id="dropdown-playbooks"
                             show={openDropdowns['playbooks']}
                             onToggle={() => toggleDropdown('playbooks')}
@@ -127,7 +131,7 @@ function SidebarPanel() {
                                 href="/playbooks"
                                 className={location.pathname === "/playbooks" ? 'submenu-active' : ''}
                             >
-                                Playbooks
+                                Growth
                             </NavDropdown.Item>
                             <NavDropdown.Item
                                 href="/how-tos"
@@ -136,7 +140,7 @@ function SidebarPanel() {
                                 How Tos
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#link"><span><img src="../images/skill-icon.png" alt="Skills Directory" /></span> Skills Directory</Nav.Link>
+                        <Nav.Link href="#link"><span><img src="../images/skill-icon.png" alt="Upgrade" /></span> Upgrade</Nav.Link>
                          
                     </Nav>
                 </Navbar.Collapse>
