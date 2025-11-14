@@ -34,8 +34,6 @@ function SidebarPanel() {
         setIsActive((current) => !current);
     };
 
-    
-
     const [username, setUsername] = useState("Home");
 
     // Define dropdown paths to determine which dropdown should be open
