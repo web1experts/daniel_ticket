@@ -1,0 +1,367 @@
+.main__wrapper h2 {
+    font-size: 30px;
+}
+
+.final--step {
+    position: relative;
+    padding: 3rem;
+}
+
+.final--step .btn--sticky {
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+.final--step .list-group-item {
+    border: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.final--step .list-group-item+.list-group-item {
+    margin-top: 1rem;
+}
+
+.final--step .list-group-item h3 {
+    font-size: 25px;
+    margin: 0;
+    margin-right: 1rem;
+    line-height: 25px;
+    flex: 1 1;
+    text-align: right;
+}
+
+.final--step .list-group-item p {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0.1rem 0;
+    font-weight: 700;
+    color: #0D6C7D;
+    flex: 1 1;
+}
+
+.final--step .toggle--par {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.final--step .toggle--par strong {
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+.final--step .switch--toggle {
+    margin: 0 4rem;
+    padding: 0;
+    position: relative;
+    border: none;
+    height: 2.5rem;
+    width: 4.5rem;
+    border-radius: 1.5rem;
+    color: #1E2024;
+    background: #78788050;
+    cursor: pointer;
+}
+
+.final--step .switch--toggle:focus,
+.final--step .switch--toggle.focus,
+.final--step .switch--toggle:focus.active,
+.final--step .switch--toggle.focus.active {
+    outline: none;
+}
+
+.final--step .switch--toggle:before,
+.final--step .switch--toggle:after {
+    line-height: 1.5rem;
+    width: 4rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.25s;
+}
+
+.final--step .switch--toggle:before {
+    content: 'Off';
+    left: -4rem;
+}
+
+.final--step .switch--toggle:after {
+    content: 'On';
+    right: -4rem;
+    opacity: 0.5;
+}
+
+.final--step .switch--on:before {
+    content: 'Off';
+    left: -4rem;
+    opacity: 0.5;
+}
+
+.final--step .switch--on:after {
+    content: 'On';
+    right: -4rem;
+    opacity: 1;
+}
+
+.final--step .switch--toggle>.handle {
+    position: absolute;
+    top: 0.1875rem;
+    left: 3px;
+    width: 2.125rem;
+    height: 2.125rem;
+    border-radius: 1.125rem;
+    background: #fff;
+    transition: all 0.25s;
+    transform: translateX(0px);
+}
+
+.final--step .switch--on {
+    background: #01F2FE;
+    transition: background-color 0.25s;
+}
+
+.final--step .switch--on .handle {
+    transition: all 0.25s;
+    transform: translateX(32px);
+}
+
+.video--voiceover {
+    height: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.voice--open {
+    height: auto;
+    visibility: visible;
+}
+
+.final--step .video--voiceover h5 {
+    font-size: 15px;
+}
+
+.final--step .video--voiceover .list-group-item {
+    flex: none;
+    text-align: center;
+}
+
+.final--step .video--voiceover .list-group-item .form-control {
+    border: 0;
+    background: #F0F0F0;
+    font-size: 14px;
+    height: 40px;
+}
+
+.final--step .video--voiceover .list-group-item form {
+    flex-flow: row wrap;
+    margin: 0 -15px;
+    display: flex;
+    flex: 1 1;
+}
+
+.final--step .video--voiceover .list-group-item .form-group {
+    flex: 1 1 100%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+.final--step .video--voiceover .list-group {
+    align-items: center;
+}
+
+.final--step .video--voiceover .list-group-item:first-child {
+    min-width: 0;
+    flex: 1 1;
+    margin-right: 2rem;
+}
+
+.final--step .video--voiceover .list-group-item .play--icon {
+    background: #01F2FE;
+    width: 55px;
+    min-width: 55px;
+    height: 55px;
+    color: #1E2024;
+    font-size: 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.final--step .video--voiceover .list-group-item+.list-group-item {
+    margin-top: 0;
+}
+
+.final--step .card {
+    align-items: flex-start;
+    column-gap: 15px;
+}
+
+.final--step .card .card-body {
+    flex: 1 1 100%;
+    max-width: calc(33.333% - 15px);
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.final--step .card .card-title {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 0 1rem;
+}
+
+.final--step .card .card-body:first-child {
+    padding-right: 0;
+}
+
+.final--step table td {
+    vertical-align: middle;
+}
+
+.final--step table td:first-child {
+    padding-left: 0;
+}
+
+.final--step table td:last-child {
+    padding-right: 0;
+    text-align: right;
+}
+
+.final--step table td .dropdown-toggle {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.final--step table td .dropdown-toggle:hover, .final--step table td .dropdown-toggle:hover svg,
+.final--step table td .dropdown-toggle:focus, .final--step table td .dropdown-toggle:focus-visible,
+.final--step table td .dropdown-toggle:active {
+    color: #78788070;
+    box-shadow: none;
+    background: none;
+    border: 0;
+    outline: none;
+}
+
+.btn-success:not(:disabled):not(.disabled).active:focus, .btn-success:not(:disabled):not(.disabled):active:focus, .show>.btn-success.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
+    color: #78788080;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.final--step table td .dropdown-toggle::after {
+    display: none;
+}
+
+.final--step {
+    max-width: calc(100% - 0px);
+}
+
+@media screen and (max-width:1399px) {
+    .main__wrapper h2 {
+        font-size: 18px;
+    }
+
+    .final--step .list-group-item h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .final--step .list-group-item p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .final--step {
+        max-width: calc(100% - 0px);
+    }
+}
+
+@media screen and (max-width:991px) {
+    .final--step {
+        padding: 3rem 3rem 0 1rem;
+    }
+
+    .final--step .list-group-item h3 {
+        flex: none;
+        text-align: left;
+        max-width: 110px;
+        min-width: 110px;
+        white-space: normal;
+    }
+
+    .final--step .toggle--par {
+        flex-flow: column wrap;
+    }
+
+    .final--step .card .card-body {
+        max-width: calc(50% - 7.5px);
+    }
+
+    .final--step .btn--sticky {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .final--step .table-responsive {
+        margin-bottom: 1rem;
+    }
+
+    .final--step table td {
+        min-width: 0;
+        border: 0;
+    }
+
+    .final--step table td:last-child {
+        padding-right: .75rem;
+        text-align: left;
+    }
+
+    .final--step .video--voiceover .list-group-item:first-child {
+        margin-right: 1rem;
+    }
+
+    .final--step table td:first-child {
+        padding-left: .75rem;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    .final--step .card .card-body {
+        max-width: calc(100% - 0px);
+    }
+
+    .final--step .video--voiceover .list-group-item .form-group {
+        max-width: 100%;
+        padding: 0 15px 5px;
+    }
+
+    .table tbody tr {
+        flex: 1 1 100%;
+        max-width: calc(100% - 0px);
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,36 @@
+.user--page table td .dropdown-toggle {
+    color: #ffffff;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user--page table td .dropdown-toggle:after {
+    display: none;
+}
+
+/* .user--page table th:last-child, .user--page table .dropdown {
+    text-align: right;
+} */
+
+.user--page table .dropdown-menu {
+    background: #545b62;
+    border: 0;
+    padding: 0;
+}
+
+.user--page table .dropdown-item {
+    color: #ffffff;
+    line-height: 2;
+}
+
+.user--page table .dropdown-item+.dropdown-item {
+    border-top: 1px solid #ffffff15;
+}
+
+.user--page table .dropdown-item:hover {
+    background: #01F2FE;
+}

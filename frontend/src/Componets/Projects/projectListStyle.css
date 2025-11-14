@@ -1,0 +1,373 @@
+.main__wrapper h2 {
+    font-size: 30px;
+}
+
+.projects--page .list-group {
+    align-items: center;
+    column-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.projects--page .list-group .btn-secondary {
+    color: #1E2024;
+    background-color: #F4F4F4;
+    border-color: #F4F4F4;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    padding: 0.5rem 1rem;
+}
+
+.projects--page .list-group .btn-secondary.focus, .projects--page .list-group .btn-secondary:focus {
+    color: #ffffff;
+    background-color: #999999;
+    border-color: #999999;
+    box-shadow: none;
+}
+
+.prj_image img.project_placeholder {
+    max-width: 90px;
+}
+.prj_image img.project_screenshot {
+    max-width: 140px;
+}
+
+.btn_status .btn {
+    font-weight: 600 !important;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.projects--page .list-group .btn-secondary svg {
+    color: #00000080;
+    margin-right: 0.5rem;
+    font-size: 22px;
+    vertical-align: text-top;
+}
+
+.projects--page .list-group .btn-secondary.focus svg, .projects--page .list-group .btn-secondary:focus svg {
+    color: #ffffff;
+}
+
+.projects--page .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+.projects--page .list-group-item:last-child .btn-secondary svg {
+    margin-right: 0;
+}
+
+.projects--page .list-group .dropdown-menu {
+    margin: 0;
+    box-shadow: none;
+    border: 0;
+    min-width: 15rem;
+    padding: 0;
+}
+
+/* .projects--page .dropdown:hover .dropdown-menu {
+    display: block;
+} */
+
+.projects--page .list-group .form-check {
+    padding: 0;
+}
+
+.projects--page .list-group .form-check [type="radio"]:checked,
+.projects--page .list-group .form-check [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.projects--page .list-group .form-check [type="radio"]:checked+label,
+.projects--page .list-group .form-check [type="radio"]:not(:checked)+label {
+    position: relative;
+    padding: 1rem 2rem 1rem 3rem;
+    border-bottom: 1px solid #99999970;
+    cursor: pointer;
+    line-height: 20px;
+    display: block;
+    color: #5F5F5F;
+}
+
+.projects--page .list-group .form-check [type="radio"]:checked+label:before,
+.projects--page .list-group .form-check [type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #1E2024;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.projects--page .list-group .form-check [type="radio"]:checked+label:after,
+.projects--page .list-group .form-check [type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #1E2024;
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.projects--page .list-group .form-check [type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.projects--page .list-group .form-check [type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.projects--page .list-group .form-check [type="checkbox"]:checked,
+.projects--page .list-group .form-check [type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.projects--page .list-group .form-check [type="checkbox"]:checked+label,
+.projects--page .list-group .form-check [type="checkbox"]:not(:checked)+label {
+    position: relative;
+    padding: 1rem 2rem 1rem 3rem;
+    border-bottom: 1px solid #99999970;
+    cursor: pointer;
+    line-height: 20px;
+    display: block;
+    color: #5F5F5F;
+}
+
+.projects--page .list-group .form-check [type="checkbox"]:checked+label {
+    background: #F0F0F0;
+}
+
+.projects--page .list-group .form-check [type="checkbox"]:checked+label:after,
+.projects--page .list-group .form-check [type="checkbox"]:not(:checked)+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    width: 8px;
+    height: 15px;
+    border: solid #1E2024;
+    border-width: 0 2px 2px 0;
+    opacity: 0.1;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.projects--page .list-group .form-check [type="checkbox"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.projects--page .table td, .projects--page .table th {
+    border-top: 0;
+    vertical-align: middle;
+}
+
+.projects--page .table thead th {
+    border-bottom: 0;
+    min-width: 200px;
+}
+
+.projects--page .table td .btn {
+    width: 100%;
+    color: #1E2024;
+    font-weight: 700;
+    padding: 0.85rem 1rem;
+    border: 0;
+}
+
+.projects--page .table td .btn-danger {
+    background: #E87D64;
+}
+
+.projects--page .table td .btn-warning {
+    background: #ECA553;
+}
+
+.projects--page .table td .btn-success {
+    background: #66B53B;
+}
+
+.projects--page .table td .btn-secondary {
+    background: #724C99;
+}
+
+.projects--page .table td .btn-info {
+    background: #01F2FE;
+}
+
+span.visually-hidden {
+    display: none;
+}
+
+.pagination {
+    margin: 0;
+    justify-content: flex-end;
+}
+
+.pagination .page-link {
+    color: #1E2024;
+    margin: 0 0.15rem;
+    min-width: 38px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.pagination .page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #1E2024;
+    border-color: #1E2024;
+}
+
+.table tr .head--arrow svg, .table tr .head--click svg {
+    opacity: 0;
+}
+
+@media screen and (max-width:1399px) {
+    .main__wrapper h2 {
+        font-size: 18px;
+    }
+
+    .projects--page {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        text-align: left;
+    }
+
+    .table tbody {
+        display: flex;
+        flex-flow: row wrap;
+        column-gap: 10px;
+    }
+
+    .table tbody tr {
+        flex: 1 1 100%;
+        max-width: calc(50% - 5px);
+        margin-bottom: 10px;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table td+td {
+        padding-top: 0;
+    }
+
+    .table td img, .table td video {
+        width: 100%;
+        object-fit: cover;
+        height: 170px;
+    }
+
+    .table tr {
+        transition: all .5s ease-in-out;
+        height: 230px;
+        overflow: hidden;
+        opacity: 1;
+        background-color: rgba(0,0,0,.05)
+    }
+
+    .table tr.open--table {
+        height: auto;
+        overflow: visible;
+        opacity: 1;
+        transition: all .5s ease-in-out;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: rgba(0,0,0,.05);
+    }
+
+    .table tr .head--arrow, .table tr .head--click {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .table tr .head--arrow svg, .table tr .head--click svg {
+        opacity: 0.6;
+        font-size: 12px;
+        height: auto;
+        transition: all .5s;
+    }
+
+    .table tr .head--click svg {
+        transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width:575px) {
+    .projects--page .list-group {
+        column-gap: 7px;
+    }
+
+    .projects--page .list-group-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .list-group-horizontal>.list-group-item+.list-group-item {
+        flex: 1 1 100%;
+        max-width: calc(50% - 5px);
+    } 
+    
+    .list-group-horizontal>.list-group-item:last-child {
+        flex: 1 1;
+        max-width: max-content;
+    } 
+
+    .projects--page .list-group .btn-secondary {
+        width: 100%;
+        text-align: left;
+        font-size: 11px;
+    }
+
+    .projects--page .list-group .list-group-item:last-child .btn-secondary {
+        text-align: center;
+    }
+
+    .projects--page .list-group .btn-secondary svg {
+        color: #00000080;
+        margin-right: 0.25rem;
+        font-size: 17px;
+        vertical-align: text-top;
+    }
+
+    .table tbody tr {
+        flex: 1 1 100%;
+        max-width: calc(100% - 0px);
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .projects--page .list-group .btn-secondary {
+         font-size: 10px;
+        padding: 0.25rem .5rem;
+    }
+}

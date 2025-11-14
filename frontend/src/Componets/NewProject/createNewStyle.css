@@ -1,0 +1,350 @@
+.main__wrapper h2 {
+    font-size: 30px;
+}
+
+.new--Project--page form {
+    display: flex;
+    column-gap: 20px;
+    flex-flow: row wrap;
+}
+
+.fixed--bottom {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+    background: #FAFAFA;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toggle-switch label {
+    margin: 0;
+}
+
+.toggle-switch input[type="checkbox"] {
+    width: 50px;
+    height: 25px;
+    appearance: none;
+    background-color: #ccc;
+    outline: none;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: fit-content;
+}
+
+.toggle-switch input[type="checkbox"]:checked {
+    background-color: #0d6efd;
+}
+
+.toggle-switch input[type="checkbox"]:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 3px;
+    transition: transform 0.3s;
+}
+
+.toggle-switch input[type="checkbox"]:checked:before {
+    transform: translateX(25px);
+}
+
+.toggle-switch label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+
+@media screen and (max-width:991px) {
+    .fixed--bottom {
+        position: relative;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.inner_form {
+    display: flex;
+    column-gap: 20px;
+    flex-flow: row wrap;
+}
+
+.new--Project--page form .form-check {
+    padding-left: 0;
+    flex: 1 1 100%;
+    max-width: calc(33.333% - 20px);
+    margin-bottom: 1rem;
+}
+/* 
+.content__container > .container-fluid {
+    height: calc(100vh - 35px);
+}
+
+.content__container > .container-fluid > .row,
+.content__container > .container-fluid > .row > div {
+    height: 100%;
+}
+
+.content__container .tab-content {
+    height: calc(100% - 170px);
+} */
+
+.new--script--page .min__height {
+    height: calc(100vh - 242px);
+}
+
+.new--Project--page form .form-check [type="radio"]:checked,
+.new--Project--page form .form-check [type="radio"]:not(:checked),
+.new--Project--page form .form-check [type="checkbox"]:checked,
+.new--Project--page form .form-check [type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.new--Project--page form .form-check label {
+    position: relative;
+    height: 100%;
+    padding: 1rem 2rem;
+    min-height: 80px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    cursor: pointer;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1E2024;
+    background: #E5E5E5;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    column-gap: 15px;
+}
+
+.new--Project--page form .form-check label small {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.new--Project--page form .form-check label .form-check {
+    max-width: calc(50% - 0px);
+    margin-bottom: 0;
+}
+
+.new--Project--page form .custom-check label:hover {
+    background: #e4e1e1;
+}
+
+.new--Project--page form .form-check [type="radio"]:checked+label,
+.new--Project--page form .form-check [type="checkbox"]:checked+label {
+    background: #00D4E4;
+}
+
+.new--Project--page form .form-control {
+    background: #E5E5E5;
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    min-height: 45px;
+    height: calc(100% - 35px);
+}
+
+.new--Project--page form input {
+    min-width: 350px;
+}
+
+.new--Project--page form select {
+    background: #F0F0F0;
+    width: 100%;
+    height: 45px;
+}
+
+.new--Project--page form select:focus {
+    border: 1px solid #1E202430;
+    box-shadow: none;
+}
+
+.new--Project--page form .form-group {
+    max-width: calc(50% - 10px);
+    flex: 1 1 100%;
+}
+
+.new--Project--page .form-group .css-13cymwt-control, .new--Project--page .form-group .css-t3ipsp-control,
+.new--Project--page .form-group .css-13cymwt-control, .new--Project--page .form-group .css-t3ipsp-control,
+.translator--page .form-group .css-13cymwt-control, .translator--page .form-group .css-t3ipsp-control,
+.translator--page .form-group .css-13cymwt-control, .translator--page .form-group .css-t3ipsp-control,
+.new--script--page .form-group .css-13cymwt-control, .new--script--page .form-group .css-t3ipsp-control,
+.new--script--page .form-group .css-13cymwt-control, .new--script--page .form-group .css-t3ipsp-control {
+    min-height: fit-content;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0;
+    border-width: 0;
+}
+
+.new--Project--page .form-group .css-1nmdiq5-menu, .new--Project--page .form-group .css-14h4o58-menu,
+.new--Project--page .form-group .css-1nmdiq5-menu, .new--Project--page .form-group .css-14h4o58-menu
+.translator--page .form-group .css-1nmdiq5-menu, .translator--page .form-group .css-14h4o58-menu,
+.translator--page .form-group .css-1nmdiq5-menu, .translator--page .form-group .css-14h4o58-menu,
+.new--script--page .form-group .css-1nmdiq5-menu, .new--script--page .form-group .css-14h4o58-menu,
+.new--script--page .form-group .css-1nmdiq5-menu, .new--script--page .form-group .css-14h4o58-menu  {
+    position: absolute;
+    left: 0;
+}
+
+.new--Project--page .form-group .css-1dyz3mf, .new--Project--page .form-group .css-1dyz3mf,
+.translator--page .form-group .css-1dyz3mf, .translator--page .form-group .css-1dyz3mf,
+.new--script--page .form-group .css-1dyz3mf, .new--script--page .form-group .css-1dyz3mf {
+    padding: 0;
+}
+
+.new--Project--page .form-group .css-1p3m7a8-multiValue, .new--Project--page .form-group .css-1p3m7a8-multiValue,
+.translator--page .form-group .css-1p3m7a8-multiValue, .translator--page .form-group .css-1p3m7a8-multiValue,
+.new--script--page .form-group .css-1p3m7a8-multiValue, .new--script--page .form-group .css-1p3m7a8-multiValue {
+    background-color: #f5f5f5;
+    margin: 0 2px 2px 0;
+}
+
+.new--Project--page form .form-group label {
+    font-weight: 600;
+}
+
+.new--Project--page table td {
+    vertical-align: middle;
+    border: 0;
+}
+
+.new--Project--page table td select {
+    background: #F0F0F0;
+    width: 100%;
+    height: 38px;
+    border: 0;
+}
+
+.new--Project--page .project__details .list-group-item {
+    border: 0;
+    padding: 0;
+    padding-top: 1rem;
+    flex: 1 1;
+}
+
+.new--Project--page .project__details .list-group-item h3 {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.new--Project--page .project__details .list-group-item ul {
+    padding-left: 16px;
+}
+
+.new--Project--page .project__details .list-group-item li {
+    font-size: 16px;
+    font-weight: 500;
+    list-style: disc;
+    margin-bottom: 0.25rem;
+}
+
+.test--metho form .form-group {
+    max-width: 300px;
+}
+
+@media screen and (max-width:1499px) {
+    .new--Project--page form .form-check label {
+        padding: 1rem;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .main__wrapper h2 {
+        font-size: 18px;
+    }
+
+    .new--Project--page form .form-check label {
+        font-size: 14px;
+        padding: 1rem;
+    }
+
+    .new--Project--page form .form-check label small {
+        font-size: 12px;
+    }
+
+    .new--Project--page form .form-group label {
+        font-size: 12px;
+    }
+
+    .new--Project--page form .form-check {
+        max-width: calc(33.333% - 20px);
+    }
+
+    .test--metho {
+        padding: 2rem 1rem;
+    }
+
+    .new--Project--page table td select {
+        background: #e4e1e1;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .new--Project--page form .form-check {
+        max-width: calc(50% - 20px);
+    }
+
+    .test--metho form .form-control {
+        height: 38px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .new--Project--page form .form-check {
+        max-width: calc(50% - 10px);
+    }
+
+    .new--Project--page form .form-control {
+        min-width: 100%;
+    }
+
+    .new--Project--page form {
+        flex-flow: column wrap;
+    }
+    
+    .new--Project--page form .form-check label {
+        width: 100%;
+    }
+
+    .new--Project--page form select {
+        min-width: auto;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .new--Project--page form .form-check {
+        max-width: calc(100% - 0px);
+    }
+    
+    .new--Project--page form .form-check label {
+        width: 100%;
+    }
+
+    .new--Project--page form .form-group {
+        max-width: calc(100% - 0px);
+    }
+}

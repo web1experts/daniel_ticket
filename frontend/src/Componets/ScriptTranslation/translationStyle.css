@@ -1,0 +1,119 @@
+.main__wrapper h2 {
+    font-size: 30px;
+}
+
+.translator--page .nav-tabs {
+    border-bottom: 0;
+    column-gap: 12px;
+}
+
+.translator--page .nav-tabs .nav-link {
+    margin-bottom: 0;
+    border: 0;
+    background: #CBFFFD;
+    color: #1E2024;
+    font-size: 20px;
+    padding: 1rem 3rem;
+    font-weight: 700;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+
+@media (min-width:1200px) and (max-width:1499px) {
+    .translator--page .nav-tabs .nav-link {
+        font-size: 16px;
+        padding: 1rem 2rem;
+    }
+}
+
+.translator--page .nav-tabs .nav-item .nav-link:hover, 
+.translator--page .nav-tabs .nav-item.show .nav-link, 
+.translator--page .nav-tabs .nav-link.active {
+    color: #1E2024;
+    background-color: #01F2FE;
+    outline: none;
+}
+
+.translator--page .tab-content>.tab-pane {
+    padding: 2rem 0 0;
+}
+
+.translated_area .form-control {
+    flex: 1 1;
+    min-height: 45px;
+    margin-right: 1rem;
+}
+
+div#comments {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#comments .list-group-item {
+    background: none;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#comments .user--img {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#comments .user--img img {
+    object-fit: cover;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+}
+
+#comments .user--img h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#comments .user--img h3 small {
+    font-size: 80%;
+    display: block;
+}
+
+#comments .user--entry p {
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (min-width:1200px) and (max-width:1499px) {
+    .translator--page .nav-tabs .nav-link {
+        font-size: 14px;
+        padding: 0.75rem 1rem;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .main__wrapper h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .translator--page .nav-tabs .nav-link {
+        font-size: 13px;
+        padding: 0.75rem 1rem;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .translator--page .nav-tabs .nav-link {
+        display: block;
+        width: 100%;
+    }
+}

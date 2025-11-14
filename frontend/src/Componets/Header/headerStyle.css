@@ -1,0 +1,148 @@
+.App-header {
+    background: #E5E5E5;
+    padding: .5rem 3rem;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.App-header .form-group {
+    margin-left: auto;
+}
+
+.App-header .list-group {
+    justify-content: flex-end;
+    background: none;
+    border: 0;
+    align-items: center;
+}
+
+.App-header .list-group .list-group-item {
+    background: none;
+    border: 0;
+    color: #1E2024;
+    padding: 0.5rem 0;
+    margin-left: 2rem;
+    font-size: 20px;
+}
+
+.App-header .form-group {
+    border-right: 3px solid #1E2024;
+    padding-right: 2rem;
+}
+
+.App-header .form-control {
+    min-width: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    height: 42px;
+}
+
+.App-header .list-group .icon--plus {
+    background: #1E2024;
+    color: #ffffff;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media screen and (max-width:1299px) {
+    .navbar-light .navbar-brand img {
+        max-width: 140px;
+    }
+
+    .App-header {
+        padding: .5rem 1rem;
+    }
+
+    .App-header .form-control {
+        height: 35px;
+        min-width: auto;
+        font-size: 11px;
+    }
+
+    .App-header .list-group .list-group-item {
+        font-size: 15px;
+    }
+
+    .App-header .list-group .icon--plus {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .App-header .list-group .list-group-item {
+        padding: 0;
+    }
+
+    .main__wrapper {
+        height: calc(100% - 52px);
+    }
+}
+
+@media screen and (max-width:767px) {
+    .App-header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-light .navbar-brand img {
+        max-width: 120px;
+    }
+
+    .App-header .form-group {
+        margin-left: auto;
+        padding-right: 1rem;
+        border: 0;
+    }
+
+    .App-header .navbar {
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+
+    .App-header .list-group {
+        justify-content: center;
+        column-gap: 10px;
+    }
+
+    .App-header .list-group .list-group-item {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .navbar-light .navbar-brand img {
+        max-width: 120px;
+    }
+
+    .App-header .form-group {
+        margin-left: 0;
+        padding-right: 0;
+        padding-top: 0.5rem;
+        border: 0;
+        order: 13;
+        flex: 1 1 auto;
+    }
+
+    .App-header .navbar {
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+}
