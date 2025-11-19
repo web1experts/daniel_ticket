@@ -1,0 +1,142 @@
+.main__wrapper h2 {
+    font-size: 30px;
+}
+
+.new--script--page .nav-tabs {
+    border-bottom: 0;
+    column-gap: 12px;
+}
+
+.new--script--page .nav-tabs .nav-link {
+    margin-bottom: 0;
+    border: 0;
+    background: #CBFFFD;
+    color: #1E2024;
+    font-size: 20px;
+    padding: 1rem 3rem;
+    font-weight: 700;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+
+@media (min-width:1200px) and (max-width:1399px) {
+    .new--script--page .nav-tabs .nav-link {
+        font-size: 16px;
+        padding: 1rem 2rem;
+    }
+}
+
+.new--script--page .nav-tabs .nav-item .nav-link:hover, 
+.new--script--page .nav-tabs .nav-item.show .nav-link, 
+.new--script--page .nav-tabs .nav-link.active {
+    color: #1E2024;
+    background-color: #01F2FE;
+}
+
+.new--script--page .tab-content>.tab-pane {
+    padding: 2rem 0 0;
+}
+
+.new--script--page form input, .new--script--page form select {
+    height: 45px;
+}
+
+.new--script--page form .form-control {
+    background: #F0F0F0;
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.tab--script form {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 15px;
+    align-items: flex-end;
+}
+
+.tab--script form .form-group {
+    flex: 1 1;
+}
+
+.tab--script form input {
+    min-width: 270px;
+}
+
+.tab--script .card-group {
+    column-gap: 15px;
+}
+
+.tab--script .card-group+.card-group {
+    margin-top: 1rem;
+}
+
+.tab--script .card-group .card {
+    border: 1px solid #1E202420;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+}
+
+.tab--script .card .card-title, .tab--script .card-footer h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.tab--script .card .card-title small, .tab--script .card-footer h4 small {
+    text-transform: capitalize;
+    display: block;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.tab--script .card .card-text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.tab--script .card-footer {
+    padding: 0 1.25rem 1.25rem;
+    background-color: transparent;
+    border-top: 0;
+}
+
+.tab--script .card-footer h4 small {
+    display: inline;
+    margin-left: 0.5rem;
+}
+
+.tab--script .card-footer .btn {
+    padding: 0;
+    font-size: 15px;
+    color: #2380b6;
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+    .main__wrapper h2 {
+        font-size: 16px;
+    }
+
+    .new--script--page .nav-tabs .nav-link {
+        font-size: 14px;
+        padding: 0.75rem 1rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .new--script--page .nav-tabs .nav-link {
+        font-size: 13px;
+        padding: 0.75rem 1rem;
+    }
+
+    .main__wrapper h2 {
+        font-size: 16px;
+    }
+}

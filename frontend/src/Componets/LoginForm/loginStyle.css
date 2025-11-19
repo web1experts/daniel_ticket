@@ -1,0 +1,105 @@
+.login--Wrapper {
+    padding: 0;
+    flex: 1 1;
+}
+
+.login--screen {
+    padding: 4rem 6rem;
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.login--Wrapper form .form-control {
+    padding: 0 1rem;
+    height: 55px;
+    background: #E5E5E5;
+    border: 0;
+}
+
+.login--Wrapper form button {
+    width: 100%;
+}
+
+.login--Wrapper form .list-group-item {
+    padding: 0.5rem;
+    border-radius: .25rem;
+    border: 1px solid #73777B;
+    margin: 0 0.25rem;
+    min-width: 40px;
+}
+
+.login--Wrapper form .list-group-item+.list-group-item {
+    border-top-width: 1px;
+    border-left-width: 1px;
+}
+
+.login--Wrapper form .list-group-item:first-child {
+    border-top-right-radius: .25rem;
+}
+
+.login--Wrapper form .list-group-item:last-child {
+    border-bottom-left-radius: .25rem;
+}
+
+.login--Wrapper form .list-group-item svg, .login--Wrapper form .list-group-item img {
+    width: 35px;
+    height: auto;
+}
+
+.login--Wrapper form button {
+    color: #ffffff;
+}
+
+.login--Wrapper form .form-control:focus {
+    box-shadow: none;
+}
+
+.login--Wrapper p {
+    text-align: center;
+    margin: 0;
+}
+
+.login--Wrapper p a {
+    text-decoration: underline;
+    color: #1E2024;
+}
+
+.login--Wrapper .btm--text svg {
+    font-size: 8px;
+}
+
+.login--Wrapper img.bg--login {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width:1299px) {
+    .login--screen {
+        padding: 2rem 1rem;
+    }
+
+    .login--Wrapper form .form-control {
+        height: 45px;
+    }
+
+    .login--Wrapper form .list-group-item svg, .login--Wrapper form .list-group-item img {
+        width: 20px;
+    }
+
+    .login--Wrapper p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .login--Wrapper form {
+        margin: 4rem 0;
+    }
+
+    .login--screen {
+        padding: 2rem 0;
+    }
+}
